@@ -7,7 +7,7 @@
 </head>
 <h1>Contact Form</h1>
 <body>
-    <form action="">
+    <form action="results.html" method="GET">
         <table border="1">
             <tr>
                 <!-- Normal text-->
@@ -58,10 +58,30 @@
                 </td>
             </tr>
             <tr>
+                <!--Checkbox-->
+                <td>Grade:</td>
+                <td>
+                    <label><input type="checkbox" name="grade" value="9">9th</label>
+                    <label><input type="checkbox" name="grade" value="10">10th</label>
+                    <label><input type="checkbox" name="grade" value="10">11th</label>
+                </td>
+            </tr>
+            <tr>
                 <!--Select (Drop Down)-->
-
+                <td>Favorite Sports</td>
+                <td>
+                    <select name="sports" id="sports">
+                        <option value="" selected disabled>Select a sport:</option>
+                        <option value="soccer">Soccer</option>
+                        <option value="baseball">Baseball</option>
+                        <option value="basketball">Basketball</option>
+                    </select>
+                </td>
             </tr>
         </table>
+        <!--Submit-->
+        <br>
+        <button type="submit">Submit</button>
     </form>
 </body>
 </html>
